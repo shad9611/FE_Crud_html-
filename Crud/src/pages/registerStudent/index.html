@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Alumnos</title>
+    <link rel="stylesheet" href="/src/pages/registerStudent/style.css" />
+  </head>
+  <body>
+    <form class="form" id="form">
+      <h2 class="form_title">Registrar datos</h2>
+
+      <div class="form_conteiner">
+            <div class="form_group">
+                <input type="text" id="name" class="form_input" placeholder=""/>
+                <label for="name" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+            </div>
+      </div>
+
+      <div class="form_conteiner">
+            <div class="form_group">
+                <input type="text" id="lastName" Class="form_input" placeholder=""/>
+                <label for="lastName" class="form_label">Apellido</label>
+                <span class="form_line"></span>
+            </div>
+      </div>
+
+      <div class="form_conteiner">
+            <div class="form_group">
+                <input type="text" id="email" class="form_input" placeholder=""/>
+                <label for="email" class="form_label">Email</label>
+                <span class="form_line"></span>
+            </div>
+        <input type="submit" class="form_submit" value="Registrar" />
+      </div>
+    </form>
+      <div  class="conteiner mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+         <table border="2" style="border-collapse: collapse;">
+            <thead style="background: #302b63; color: white;">
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+
+            </tbody>
+         </table>
+      </div>
+    
+
+    <script src="/src/pages/registerStudent/main.js"></script>
+  </body>
+</html>

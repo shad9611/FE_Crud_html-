@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/pages/registerStudent/style.css" />
+  </head>
+  <body>
+    <form class="form" id="form">
+      <h2 class="form_title">Bienvenido</h2>
+
+      <div class="form_conteiner">
+            <div class="form_group " id="group_user">
+                <input type="text" id="user" name="user" class="form_input" placeholder=""/>
+                <label for="user" class="form_label">Usuario</label>
+                <span class="form_line "></span>
+            </div>
+            <div>
+              <p class="form_input_error"> El usuario solo tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+    </div>
+      
+
+      <div class="form_conteiner">
+            <div class="form_group " id="group_password">
+                <input type="password" id="password" name="password" class="form_input" placeholder=""/>
+                <label for="password" class="form_label">Contraseña</label>
+                <span class="form_line "></span>
+            </div>
+            <div>
+              <p class="form_input_error"> La contraseña solo tiene que ser de 4 a 12 digitos.</p>
+            </div>
+            
+              <button type="submit" class=" form_submit group_btn_send">Entrar</button>
+              <p class="form_message_congrats" id="form_message_congrats">Registro exitoso!.</p>
+            
+        
+      </div>
+      <div class="form_message" id="form_message">
+        <p><i class=" fa-solid fa-triangle-exclamation"></i><b>Error:</b> Favor de llenar datos correctamente.</p>
+      </div>
+    </form>
+
+    <script src="/src/pages/registerStudent/main.js"></script>
+    <script src="http://kit.fontawesome.com/411fb56269.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
